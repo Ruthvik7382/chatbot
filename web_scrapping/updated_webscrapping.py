@@ -318,7 +318,7 @@ def extract_data_and_save(url):
                 elif isinstance(item, list):
                     for row in item:
                         output_file.write(f"{', '.join(row)}\n")
-            output_file.write("\n")
+            output_file.write(f"Information Source: {url}\n\n")
 
 
 """ elif tag_name == 'a':
