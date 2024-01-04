@@ -196,7 +196,7 @@ def extract_data_and_save_b(url):
                 elif isinstance(item, list):
                     for row in item:
                         output_file.write(f"{', '.join(row)}\n")
-            output_file.write("\n")
+            output_file.write(f"Information Source: {url}\n\n")
 
     final_output = remove_commas_and_save(output_file_path)
 
